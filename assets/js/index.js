@@ -108,3 +108,12 @@ ScrollReveal({
 #about,
 #about header,
 #about .content`);
+
+
+const toggles = document.querySelectorAll('.card-toggle');
+
+toggles.forEach(toggle => {
+	toggle.addEventListener('click', () => {
+		toggle.parentNode.classList.toggle('active');
+	});
+});
