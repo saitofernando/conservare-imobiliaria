@@ -365,6 +365,7 @@ body.menu-expanded button path {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    
 }
 
 #services .card {
@@ -779,37 +780,8 @@ body.menu-expanded button path {
 /* TOGLERS */
 
 
-.card {
-	background-color: transparent;
-	border: 1px solid #9FA4A8;
-	border-radius: 10px;
-	padding: 30px;
-	position: relative;
-	overflow: hidden;
-	margin: 0.5rem 0;
-	transition: 0.3s ease;
-}
-
-.card.active {
-	background-color: #fff;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
-}
-
-
-.card.active::before {
-	color: #3498db;
-	top: -10px;
-	left: -30px;
-	transform: rotateY(180deg);
-}
-
-.card-title {
-	margin: 0 35px 0 0;
-}
-
 .card-text {
-	display: none;
-	margin: 30px 0 0;
+	display: none;	
 }
 
 .card.active .card-text {
@@ -820,7 +792,7 @@ body.menu-expanded button path {
 	background-color: transparent;
 	border: none;
 	border-radius: 50%;
-	color: #fff;
+	color: var(--blue-light);
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -832,6 +804,7 @@ body.menu-expanded button path {
 	right: 30px;
 	height: 30px;
 	width: 30px;
+    transition: 0.4s ease;
 }
 
 .card-toggle:focus {
@@ -839,21 +812,9 @@ body.menu-expanded button path {
 }
 
 .card.active .card-toggle {
-	background-color: #9FA4A8;
+	transform: rotate(180deg);
+    background-color: var(--blue-light);
+    color: white;
+
 }
 
-.card-toggle .fa-times {
-	display: none;
-}
-
-.card.active .card-toggle .fa-times {
-	display: block;
-}
-
-.card-toggle .fa-chevron-down {
-	color: #83888E;
-}
-
-.card.active .card-toggle .fa-chevron-down {
-	display: none;
-}
