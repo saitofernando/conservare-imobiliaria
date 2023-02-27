@@ -779,7 +779,11 @@ body.menu-expanded button path {
 
 /* TOGLERS */
 
-
+.card-title {
+    display: flex;
+    gap: 1rem;  
+    align-items: center;
+}
 .card-text {
 	display: none;	
 }
