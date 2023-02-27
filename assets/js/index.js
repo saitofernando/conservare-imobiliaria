@@ -23,6 +23,7 @@ window.addEventListener("scroll", () => {
 //Adiciona a classe active de acordo com a seção;
 const home = document.getElementById("home");
 const services = document.getElementById("services");
+const clients = document.getElementById("clients");
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
 const depositions = document.getElementById("depositions");
@@ -30,6 +31,7 @@ const depositions = document.getElementById("depositions");
 const scrollMenuSelected = () => {
     activeMenuAtCurrentSection(home);
     activeMenuAtCurrentSection(services);
+    activeMenuAtCurrentSection(clients);
     activeMenuAtCurrentSection(about);
     activeMenuAtCurrentSection(contact);
 };
@@ -105,6 +107,9 @@ ScrollReveal({
 #services,
 #services header,
 #services .card,
+#clients,
+#clients header,
+#clients .empresas,
 #about,
 #about header,
 #about .content`);
@@ -112,8 +117,13 @@ ScrollReveal({
 
 const toggles = document.querySelectorAll('.card-toggle');
 
+
+
+
 toggles.forEach(toggle => {
 	toggle.addEventListener('click', () => {
 		toggle.parentNode.classList.toggle('active');
+
+
 	});
 });

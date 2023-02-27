@@ -354,7 +354,8 @@ body.menu-expanded button path {
 
 /* services */
 #services {
-    padding-block: 10rem;
+    padding-top: calc(4.1rem + var(--nav-height));
+
 }
 
 #services header h2 {
@@ -380,6 +381,41 @@ body.menu-expanded button path {
 #services .card h3 {
     color: var(--blue-light);
     margin-block: 1.6rem; /* Margin-block pega as margens de cima e baixo*/
+}
+
+
+#clients {
+    padding-block: 10rem;
+}
+
+#clients header h2 {
+    margin-bottom: 6rem;
+}
+#clients .wrapper {
+    width: 100%;
+}
+
+#clients .empresas ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#clients .empresas ul li {
+    width: 23%;
+    height: 23%;
+    flex-direction: column;
+    flex-grow: 1;
+
+    
+}
+
+#clients .empresas ul li img {
+    border-radius: 1rem;
+   
+    outline: solid 4px var(--brand-light);
+    outline-offset: -1px;
 }
 
 /* about */
@@ -473,6 +509,10 @@ body.menu-expanded button path {
     visibility: visible;
     transform: translateY(0);
 }
+
+
+
+
 
 /* RESPONSIVO */
 @media screen and (min-width: 1024px) {
@@ -714,6 +754,38 @@ body.menu-expanded button path {
         flex-grow: 1;
     }
 
+
+    #clients {
+        padding-block: 10rem;
+    }
+    #clients .wrapper {
+        max-width: 112.1rem;
+    }
+
+    #clients .empresas ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    #clients .empresas ul li {
+        box-sizing: border-box;
+        width: 14rem;
+        height: 15%;
+        flex-direction: column;
+        flex-grow: 1;
+
+     
+    }
+
+    #clients .empresas ul li img {
+        border-radius: 0.7rem;
+        
+        outline: solid 4px var(--brand-light);
+        outline-offset: -1px;
+    }
+
     /* ABOUT */
     #about {
         padding-block: 10rem;
@@ -773,6 +845,8 @@ body.menu-expanded button path {
     #footer .wrapper .p p:last-child {
         margin-bottom: 0;
     }
+
+  
 }
 
 
@@ -801,13 +875,13 @@ body.menu-expanded button path {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 16px;
+	font-size: 1.6rem;
 	padding: 0;
 	position: absolute;
-	top: 30px;
-	right: 30px;
-	height: 30px;
-	width: 30px;
+	top: 3.0rem;
+	right: 3.0rem;
+	height: 3.0rem;
+	width: 3.0rem;
     transition: 0.4s ease;
 }
 
@@ -821,4 +895,9 @@ body.menu-expanded button path {
     color: white;
 
 }
+
+.card-toggle:hover {
+    color: white;
+}
+
 
