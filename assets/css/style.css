@@ -489,6 +489,9 @@ body.menu-expanded button path {
         font-size: 4rem;
         line-height: 5.2rem;
     }
+    section h4 {
+        font-size: 1.6rem;
+    }
 
     .col-a {
         grid-area: A;
