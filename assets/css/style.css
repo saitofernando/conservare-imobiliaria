@@ -728,7 +728,8 @@ body.menu-expanded button path {
 
     /* SERVICES */
     #services {
-        padding-block: 10rem;
+        padding-top: calc(4.1rem + var(--nav-height));
+    
     }
 
     #services header h2 {
