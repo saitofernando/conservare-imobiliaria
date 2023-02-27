@@ -412,11 +412,15 @@ body.menu-expanded button path {
 }
 
 #clients .empresas ul li img {
-    border-radius: 1rem;
-   
-    outline: solid 4px var(--brand-light);
-    outline-offset: -1px;
+    border-radius: 0.7rem;
+    
+    filter: grayscale(1);
 }
+
+#clients .empresas ul li img:hover {
+    filter: none;
+}
+
 
 /* about */
 #about {
@@ -776,15 +780,17 @@ body.menu-expanded button path {
         height: 15%;
         flex-direction: column;
         flex-grow: 1;
-
      
     }
 
     #clients .empresas ul li img {
         border-radius: 0.7rem;
         
-        outline: solid 4px var(--brand-light);
-        outline-offset: -1px;
+        filter: grayscale(1);
+    }
+
+    #clients .empresas ul li img:hover {
+        filter: none;
     }
 
     /* ABOUT */
