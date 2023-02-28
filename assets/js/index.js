@@ -26,14 +26,15 @@ const services = document.getElementById("services");
 const clients = document.getElementById("clients");
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
-const depositions = document.getElementById("depositions");
+const video = document.getElementById("video");
 
 const scrollMenuSelected = () => {
     activeMenuAtCurrentSection(home);
     activeMenuAtCurrentSection(services);
     activeMenuAtCurrentSection(clients);
     activeMenuAtCurrentSection(about);
-    activeMenuAtCurrentSection(contact);
+    activeMenuAtCurrentSection(contact);  
+
 };
 
 window.addEventListener("scroll", scrollMenuSelected);
@@ -110,6 +111,9 @@ ScrollReveal({
 #clients,
 #clients header,
 #clients .empresas,
+#video,
+#video header,
+#video .video,
 #about,
 #about header,
 #about .content`);

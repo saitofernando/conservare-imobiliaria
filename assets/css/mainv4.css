@@ -385,7 +385,8 @@ body.menu-expanded button path {
 
 
 #clients {
-    padding-block: 10rem;
+    padding-top: calc(4.1rem + var(--nav-height));
+
 }
 
 #clients header h2 {
@@ -407,7 +408,6 @@ body.menu-expanded button path {
     height: 23%;
     flex-direction: column;
     flex-grow: 1;
-
     
 }
 
@@ -420,6 +420,35 @@ body.menu-expanded button path {
 #clients .empresas ul li img:hover {
     filter: none;
 }
+
+#video {
+    padding-block: 10rem;
+}
+
+#video header h2 {
+    margin-bottom: 6rem;
+}
+#video .wrapper {
+    width: 100%;
+}
+#video .wrapper .video {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 8px;
+   
+}
+#video .wrapper .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 
 /* about */
@@ -910,4 +939,5 @@ body.menu-expanded button path {
 .responsive-maps img {
     border-radius: 14px;
 }
+
 
