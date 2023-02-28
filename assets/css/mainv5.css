@@ -739,6 +739,10 @@ body.menu-expanded button path {
 
     #home .col-b img {
         width: 82rem;
+
+        padding-top: 9rem;
+        
+
     }
 
     #home .stats {

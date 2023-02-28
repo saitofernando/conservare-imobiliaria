@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", () => {
     const backToTopButton = document.getElementById("backToTopButton");
 
-    if (scrollY > 700) {
+    if (scrollY > 900) {
         backToTopButton.classList.add("show");
     } else {
         backToTopButton.classList.remove("show");
