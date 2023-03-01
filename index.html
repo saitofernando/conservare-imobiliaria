@@ -14,6 +14,15 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />       
         
         <title>Conservare Gráfica - Corretores e imobiliárias</title>
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N8SW854');</script>
+         <!-- End Google Tag Manager -->
+
         <meta name="description" content="Comunicação visual para imobiliárias e corretoras"/>
         
         <meta name="theme-color" content="#007ECC" />
@@ -27,9 +36,42 @@
         <meta property="og:description" content="Comunicação visual para imobiliárias e corretoras" />
         <meta property="og:url" content="https://www.conservaregrafica.com.br/imobiliaria-e-corretora/" />
         <meta property="og:type" content="website" />
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10781345360"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10781345360');
+</script>
+
+<!-- Event snippet for whatsapp botao conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10781345360/VZqXCIiQho8YENCM-ZQo',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     </head>
 
     <body>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8SW854"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
         <nav id="navigation">
             <div class="wrapper">
                 <a href="#home" class="logo">
@@ -463,10 +505,12 @@
                             </li>
                         </ul>
 
-                        <a
-                            href="https://wa.me/message/LV47IM4YP4KEA1"
+                        <a  onclick="return gtag_report_conversion('https://www.conservaregrafica.com.br/imobiliaria-e-corretora/whatsapp);"
+                            href="https://www.conservaregrafica.com.br/imobiliaria-e-corretora/whatsapp"
                             target="_blank"
                             class="buttton"
+                            
+
                         >
                             <svg
                                 width="18"
